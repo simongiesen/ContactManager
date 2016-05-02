@@ -1,0 +1,101 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+
+    tools:context="com.example.shahrukhzindani.contactmanager.ContactsDetail">
+
+
+
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/button" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete"
+        android:textSize="18dp"
+        android:padding="10dp"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/button"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="#b90504"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:onClick="deleteClick"
+        />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:textSize="18dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit"
+        android:id="@+id/button2"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/button"
+        android:background="#fabe28"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textAlignment="gravity"
+        android:onClick="editClick"
+        android:padding="10dp"
+        android:layout_marginBottom="20dp"
+
+
+        />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:textSize="18dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Call"
+        android:id="@+id/button3"
+        android:layout_toEndOf="@+id/button2"
+        android:layout_alignEnd="@+id/listView"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentBottom="true"
+        android:background="#88c100"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:onClick="callClick"
+        android:padding="10dp"
+        android:layout_marginBottom="20dp"
+
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:textSize="18dp"
+        android:layout_height="wrap_content"
+        android:text="View In Google Maps"
+        android:id="@+id/button4"
+        android:layout_above="@+id/button"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/button3"
+        android:layout_alignEnd="@+id/button3"
+        android:background="#00c176"
+        android:textColor="#ffffff"
+        android:padding="10dp"
+        android:layout_marginBottom="20dp"
+        android:onClick="mapClick"
+        />
+
+
+
+
+</RelativeLayout>

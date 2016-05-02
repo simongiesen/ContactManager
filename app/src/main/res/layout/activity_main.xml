@@ -1,0 +1,54 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff">
+
+
+    <ImageView
+
+        android:id="@+id/imageView"
+        android:src="@drawable/contacts"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:gravity="right|center_vertical"
+        android:layout_gravity="center_vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp"
+        android:onClick="imageClick"
+        />
+
+    <TextView
+        android:text="Contacts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView" />
+
+
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:src="@drawable/ic_launcher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right|center_vertical"
+        android:layout_gravity="center_vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="200dp"
+        android:layout_marginTop="150dp"
+
+        />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView"
+        android:listSelector="@drawable/list_selector_pressed"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true" />
+
+
+</RelativeLayout>
